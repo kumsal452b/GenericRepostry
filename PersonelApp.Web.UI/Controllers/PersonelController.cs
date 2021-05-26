@@ -27,5 +27,11 @@ namespace PersonelApp.Web.UI.Controllers
 
             return View();
         }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+
     }
 }

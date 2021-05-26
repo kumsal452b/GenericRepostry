@@ -3,3 +3,8 @@ C:\Users\keski\source\repos\GenericRepostry\PersonelApp.Domain\bin\Debug\Persone
 C:\Users\keski\source\repos\GenericRepostry\PersonelApp.Domain\obj\Debug\PersonelApp.Domain.csprojAssemblyReference.cache
 C:\Users\keski\source\repos\GenericRepostry\PersonelApp.Domain\obj\Debug\PersonelApp.Domain.dll
 C:\Users\keski\source\repos\GenericRepostry\PersonelApp.Domain\obj\Debug\PersonelApp.Domain.pdb
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.Domain\bin\Debug\PersonelApp.Domain.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.Domain\bin\Debug\PersonelApp.Domain.pdb
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.Domain\obj\Debug\PersonelApp.Domain.csprojAssemblyReference.cache
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.Domain\obj\Debug\PersonelApp.Domain.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.Domain\obj\Debug\PersonelApp.Domain.pdb
