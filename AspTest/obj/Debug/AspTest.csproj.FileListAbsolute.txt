@@ -72,3 +72,13 @@ C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\Microsoft.CodeD
 C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\obj\Debug\AspTest.csproj.CopyComplete
 C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\obj\Debug\AspTest.dll
 C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\obj\Debug\AspTest.pdb
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\EntityFramework.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\EntityFramework.SqlServer.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\EntityFramework.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\EntityFramework.SqlServer.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\obj\Debug\AspTest.csprojAssemblyReference.cache
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\PersonelApp.DAL.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\PersonelApp.Domain.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\PersonelApp.DAL.pdb
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\PersonelApp.DAL.dll.config
+C:\Users\keski\Desktop\github-sample\GenericRepostry\AspTest\bin\PersonelApp.Domain.pdb
