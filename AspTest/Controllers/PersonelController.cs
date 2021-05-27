@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersonelApp.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,15 @@ namespace AspTest.Controllers
 {
     public class PersonelController : Controller
     {
-        // GET: Personel
+        PersonelContext theContext = new PersonelContext();
+        UnitOfWork theWork;
+        public PersonelController()
+        {
+            theWork = new UnitOfWork(theContext);
+        }
         public ActionResult Index()
         {
-            return View();
+            return View(theWork.PersonelRepository.GetAll());
         }
     }
 }
