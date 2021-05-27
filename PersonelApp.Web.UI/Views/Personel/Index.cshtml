@@ -30,6 +30,7 @@
     </div>
 
 </div>
+<input type="text" name="name" value="text" />
 
 <table class="table table-hover">
     <tr>
@@ -46,7 +47,7 @@
                 @Html.DisplayFor(modelItem => theItem.Lastname)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = theItem.Id }) |
+                @Html.ActionLink("Edit", "FilterKeyword", new { id = theItem.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = theItem.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id = theItem.Id })
             </td>

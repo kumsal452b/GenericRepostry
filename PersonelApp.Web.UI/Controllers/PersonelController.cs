@@ -28,10 +28,26 @@ namespace PersonelApp.Web.UI.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Edit()
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Edit( string key)
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult FilterKeyword(int key)
+        {
+            var result = theWork.PersonelRepository.GetById(key);
+            return View(result);
+        }
+
+
 
     }
 }
