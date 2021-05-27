@@ -19,5 +19,10 @@ namespace AspTest.Controllers
         {
             return View(theWork.PersonelRepository.GetAll());
         }
+        public ActionResult Delete(int id)
+        {
+            var theId = id;
+            return View();
+        }
     }
 }
