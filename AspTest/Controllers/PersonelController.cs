@@ -22,7 +22,7 @@ namespace AspTest.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string search)
+        public ActionResult Index(string searchString)
         {
             return View();
         }
