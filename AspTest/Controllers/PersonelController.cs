@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -19,6 +20,13 @@ namespace AspTest.Controllers
         {
             return View(theWork.PersonelRepository.GetAll());
         }
+
+        public async Task<ActionResult> Index(string search)
+        {
+
+            return View();
+        }
+
         public ActionResult Delete(int id)
         {
             var theId = id;

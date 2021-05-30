@@ -7,9 +7,20 @@
 <div class="container">
     <input class="input-lg" type="text" name="name" value="text" id="myText" />
     <button class="btn-lg">Search</button>
-    <@Html.TextBox("text1")/>
-    
+    @Html.TextBox("text1")
+
 </div>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<form asp-controller="Movies" asp-action="Index">
+    <p>
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 
 <table class="table table-hover">
     <tr>
@@ -33,16 +44,13 @@
         </tr>
     }
 </table>
-
-<script>
-   var val= function () {
-        $('#myText').blur(function () {
-            var value = $(this).val();
-            var newValue = value + '1';
-            console.log(newValue);
-
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script type=text/javascript>
+    $(document).ready(function () {
+        $('#text1').keyup(function () {
+            var x = $('#text1').val();
+            $('#text1').val(x);
+            console.log("Deneme");
         });
-    }
-    val();
-
+    });
 </script>
