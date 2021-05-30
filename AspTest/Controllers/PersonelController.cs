@@ -21,9 +21,9 @@ namespace AspTest.Controllers
             return View(theWork.PersonelRepository.GetAll());
         }
 
-        public async Task<ActionResult> Index(string search)
+        [HttpPost]
+        public ActionResult Index(string search)
         {
-
             return View();
         }
 
