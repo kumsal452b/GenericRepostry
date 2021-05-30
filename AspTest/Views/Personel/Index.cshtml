@@ -4,10 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-    <div class="container">
-        <input class="input-lg" type="text" name="name" value="text" />
-        <button class="btn-lg">Search</button>
-    </div>
+<div class="container">
+    <input class="input-lg" type="text" name="name" value="text" id="myText" />
+    <button class="btn-lg">Search</button>
+    
+</div>
 
 <table class="table table-hover">
     <tr>
@@ -31,3 +32,16 @@
         </tr>
     }
 </table>
+
+<script>
+   var val= function () {
+        $('#myText').blur(function () {
+            var value = $(this).val();
+            var newValue = value + '1';
+            console.log(newValue);
+
+        });
+    }
+    val();
+
+</script>
