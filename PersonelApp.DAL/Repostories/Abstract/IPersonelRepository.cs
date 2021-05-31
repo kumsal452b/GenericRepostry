@@ -10,6 +10,7 @@ namespace PersonelApp.DAL.Repostories.Abstract
     public interface IPersonelRepository:IRepository<Personel>
     {
         IEnumerable<Personel> GetPersonelWithDepartment();
+        IEnumerable<Personel> GetAllForPersonel(string key);
 
     }
 }

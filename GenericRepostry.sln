@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelApp.Domain", "Perso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelApp.DAL", "PersonelApp.DAL\PersonelApp.DAL.csproj", "{40BDC150-9EC6-4075-BC92-D161AC057D6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelApp.Console.UI", "PersonelApp.Console.UI\PersonelApp.Console.UI.csproj", "{C357465F-E596-41D1-911B-D3F91555AAEA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelApp.Web.UI", "PersonelApp.Web.UI\PersonelApp.Web.UI.csproj", "{89A89EA8-605E-4F00-B75A-E49F207C700A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspTest", "AspTest\AspTest.csproj", "{EAAAEA4D-6E6A-433D-8DB7-8E2000E209EC}"
@@ -27,10 +25,6 @@ Global
 		{40BDC150-9EC6-4075-BC92-D161AC057D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40BDC150-9EC6-4075-BC92-D161AC057D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40BDC150-9EC6-4075-BC92-D161AC057D6A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C357465F-E596-41D1-911B-D3F91555AAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C357465F-E596-41D1-911B-D3F91555AAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C357465F-E596-41D1-911B-D3F91555AAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C357465F-E596-41D1-911B-D3F91555AAEA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{89A89EA8-605E-4F00-B75A-E49F207C700A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{89A89EA8-605E-4F00-B75A-E49F207C700A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A89EA8-605E-4F00-B75A-E49F207C700A}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -10,6 +10,7 @@ namespace PersonelApp.DAL.Repostories.Abstract
     {
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll();
+       
         void Add(TEntity entity);
         void AddRange(IEnumerable<TEntity> entities);
         void Remove(int id);

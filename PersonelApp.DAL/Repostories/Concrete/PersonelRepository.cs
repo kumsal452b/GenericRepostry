@@ -20,6 +20,12 @@ namespace PersonelApp.DAL.Repostories.Concrete
         {
             return PersonelContext.Personels.Include("Departments").ToList();
         }
+
+        public IEnumerable<Personel> GetAllForPersonel(string key)
+        {
+           return PersonelContext.Personels.Where<Personel>(e => e.Lastname.Contains(key) || e.Name.Contains(key));
+        }
+
         public PersonelContext PersonelContext { get { return dbContext as PersonelContext; }}
     }
 }

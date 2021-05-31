@@ -24,7 +24,12 @@ namespace AspTest.Controllers
         [HttpPost]
         public ActionResult Index(string searchString)
         {
-            return View();
+            if(searchString=="" || searchString == null)
+            {
+                return View(theWork.PersonelRepository.GetAll());
+            }
+            var list = theWork.PersonelRepository.GetAllForPersonel(searchString);
+            return View(list);
         }
 
         public ActionResult Delete(int id)

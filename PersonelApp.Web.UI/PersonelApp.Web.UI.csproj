@@ -1007,10 +1007,6 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PersonelApp.Console.UI\PersonelApp.Console.UI.csproj">
-      <Project>{c357465f-e596-41d1-911b-d3f91555aaea}</Project>
-      <Name>PersonelApp.Console.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PersonelApp.DAL\PersonelApp.DAL.csproj">
       <Project>{40bdc150-9ec6-4075-bc92-d161ac057d6a}</Project>
       <Name>PersonelApp.DAL</Name>
