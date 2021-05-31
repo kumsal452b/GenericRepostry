@@ -48,5 +48,12 @@ namespace AspTest.Controllers
             ViewBag.isExit = true;
             return View();
         }
+        public ActionResult Edit(int id)
+        {
+            Personel thePersonel = theWork.PersonelRepository.GetById(id);
+            ViewBag.Name = thePersonel.Name;
+            ViewBag.Lastname = thePersonel.Lastname;
+            return View();
+        }
     }
 }

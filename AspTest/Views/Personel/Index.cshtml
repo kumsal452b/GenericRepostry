@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => theItem.Lastname)
             </td>
             <td>
-                @Html.ActionLink("Deneme","Test") |
+                @Html.ActionLink("Edit", "Edit", new { id = theItem.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = theItem.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id = theItem.Id,theItem.Lastname})
             </td>

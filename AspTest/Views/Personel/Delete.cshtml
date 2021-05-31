@@ -4,9 +4,9 @@
     var isExit = ViewBag.isExit;
 }
 @model Personel
-    <div class="container" ng-app="myApp" ng-model="myModel">
+    <div class="container" ">
         <h2>@isExit</h2>
-        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal" ng-click="click()">Delete</button>
+        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Delete</button>
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -26,15 +26,7 @@
                 </div>
             </div>
         </div>
-        <table>
-            <tr>
-                <td class="hide">Deneme</td>
-                <td>Deneme 2</td>
-            </tr>
-            <tr>
-                
-            </tr>
-        </table>
+     
         <script src="~/Scripts/jquery-3.3.1.js"></script>
         <script src="~/Scripts/jquery-3.3.1.min.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
