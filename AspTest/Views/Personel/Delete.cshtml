@@ -21,7 +21,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary" id="myButton" data-dismiss="modal">Delete</button>
+                        <button type="button" class="btn btn-primary" id="myButton">Delete</button>
                     </div>
                 </div>
             </div>
@@ -42,14 +42,15 @@
             $(document).ready(function () {
                 $('#myButton').click(function () {
                 var personel = '@Model';
-                    $.ajax({
+                    @*$.ajax({
                         url: '/Personel/Delete',
                         type: 'POST',
                         dataType:'@serializer.Serialize(Model)',
                         data: {
                             id: '@Model.Id'
                         }
-                    })
+                    })*@
+                    $('#myModal').modal('hide');
                     console.log("okey");
                 });
             });
