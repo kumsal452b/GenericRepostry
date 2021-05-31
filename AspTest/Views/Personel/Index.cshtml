@@ -7,7 +7,7 @@
 <div class="container">
     <input class="input-lg" type="text" name="name" value="text" id="myText" />
     <button class="btn-lg">Search</button>
-    @Html.TextBox("text1")
+
 
 </div>
 
@@ -48,16 +48,16 @@
 <script type=text/javascript>
     $(document).ready(function () {
         $('#myText').keyup(function () {
-            //val myArea = $('#myText').val();
-            //console.log(myArea);
-            //$.ajax(
-            //    {
-            //        url: '/Personel/Index',
-            //        type: 'POST',
-            //        dataType: 'JSON',
-
-            //    }
-            //)
+            console.log($('#myText').val());
+           
+            $.ajax(
+                {
+                    url: '/Personel/Index',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {searchString:$('#myText').val()}
+                }
+            )
             console.log("deneme");
         });
     });
