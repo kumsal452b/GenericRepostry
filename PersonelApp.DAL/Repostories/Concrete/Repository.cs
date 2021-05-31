@@ -41,7 +41,8 @@ namespace PersonelApp.DAL.Repostories.Concrete
 
         public void Remove(int id)
         {
-            dbSet.Remove(GetById(id));
+            var dbCheck=dbSet.Remove(GetById(id));
+           
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)

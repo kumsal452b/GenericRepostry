@@ -1,4 +1,5 @@
 ﻿using PersonelApp.DAL;
+using PersonelApp.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,9 +33,19 @@ namespace AspTest.Controllers
             return View(list);
         }
 
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int id,string Lastname)
         {
-            var theId = id;
+            
+            var theDeletedList = theWork.PersonelRepository.GetById(id);
+            return View(theDeletedList);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(int id )
+        {
+            //theWork.PersonelRepository.Remove(id);
+            //theWork.Complete();
+            ViewBag.isExit = true;
             return View();
         }
     }

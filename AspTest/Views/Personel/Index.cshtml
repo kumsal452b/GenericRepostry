@@ -39,7 +39,7 @@
             <td>
                 @Html.ActionLink("Edit", "FilterKeyword", new { id = theItem.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = theItem.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = theItem.Id })
+                @Html.ActionLink("Delete", "Delete", new { id = theItem.Id,theItem.Lastname})
             </td>
         </tr>
     }
