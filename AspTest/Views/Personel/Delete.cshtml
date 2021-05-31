@@ -1,7 +1,7 @@
 ﻿@using PersonelApp.Domain
 @{ 
     var serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
-    var isExit =Request.Params["isExit"];
+    var isExit = ViewBag.isExit;
 }
 @model Personel
     <div class="container" ng-app="myApp" ng-model="myModel">
@@ -21,7 +21,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary" id="myButton">Delete</button>
+                        <button type="button" class="btn btn-primary" id="myButton" data-dismiss="modal">Delete</button>
                     </div>
                 </div>
             </div>
