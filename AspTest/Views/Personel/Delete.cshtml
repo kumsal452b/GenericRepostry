@@ -17,7 +17,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>'@Model.Name @Model.Lastname' will gonna be deleting. Are you sure do you want continue</p>
+                        <p>'@Model.Name @Model.Lastname' will be deleting. Are you sure do you want continue</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -50,8 +50,9 @@
                             id: '@Model.Id'
                         }
                     })*@
-                    $('#myModal').modal('hide');
+                    $("#myModal").modal('toggle');
                     console.log("okey");
+                    
                 });
             });
         </script>
