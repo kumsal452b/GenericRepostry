@@ -64,14 +64,13 @@
 
                 } else {
                     $.ajax({
-                        url: '/Student/Edit',
+                        url: '/Personel/Edit',
                         method: 'POST',
-                        data: [
+                        data: {
+                            id: '@ViewBag.id',
                             name: name.val(),
-                            lastname: lastname.val(),
-                            id:'@ViewBag.id'
-                        ]
-
+                            lastname: surname.val(),
+                        }
                     });
                 }
 

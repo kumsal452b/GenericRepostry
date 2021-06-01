@@ -34,14 +34,14 @@
             $(document).ready(function () {
                 $('#myButton').click(function () {
                 var personel = '@Model';
-                    @*$.ajax({
+                    $.ajax({
                         url: '/Personel/Delete',
                         type: 'POST',
                         dataType:'@serializer.Serialize(Model)',
                         data: {
                             id: '@Model.Id'
                         }
-                    })*@
+                    })
                     $("#myModal").modal('toggle');
                     console.log("okey");
                     
