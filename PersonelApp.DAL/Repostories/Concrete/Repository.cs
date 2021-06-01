@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace PersonelApp.DAL.Repostories.Concrete
 {
@@ -49,7 +50,7 @@ namespace PersonelApp.DAL.Repostories.Concrete
         {
             dbSet.RemoveRange(entities);
         }
-
+        [ValidateAntiForgeryToken]
         public bool Update(TEntity entity,int id)
         {
             var theItem = dbSet.Find(id);
@@ -57,7 +58,7 @@ namespace PersonelApp.DAL.Repostories.Concrete
             {
                 return false;
             }
-            dbContext.Entry(theItem).CurrentValues.SetValues(entity);
+           
             return true;
         }
     }
