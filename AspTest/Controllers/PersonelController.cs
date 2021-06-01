@@ -66,6 +66,7 @@ namespace AspTest.Controllers
                 UpdateDate=DateTime.Now
             };
             theWork.PersonelRepository.Update(thePersonel, id);
+            theWork.Complete();
             return View();
         }
     }
