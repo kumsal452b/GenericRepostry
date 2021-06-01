@@ -65,8 +65,8 @@ namespace AspTest.Controllers
                 Name=name,
                 UpdateDate=DateTime.Now
             };
-            theWork.PersonelRepository.Update(thePersonel, id);
-            theWork.Complete();
+            //theWork.PersonelRepository.Wher
+            //theWork.Complete();
             return View();
         }
     }

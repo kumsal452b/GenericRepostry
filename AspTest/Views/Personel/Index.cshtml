@@ -4,12 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-<div class="container">
-    <input class="input-lg" type="text" name="name" value="text" id="myText" />
-    <button class="btn-lg">Search</button>
-
-
-</div>
+    <div class="container">
+        <input class="input-lg" type="text" name="name" value="text" id="myText" />
+        <button class="btn-lg">Search</button>
+        @Html.LabelFor(ViewBag.Title, new { @class = "control-label col-md-2" })
+    </div>
 
 <p>
     <a asp-action="Create">Create New</a>

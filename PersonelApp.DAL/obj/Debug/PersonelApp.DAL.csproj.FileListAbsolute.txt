@@ -28,3 +28,16 @@ C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\obj\Debug\P
 C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\obj\Debug\PersonelApp.DAL.csproj.CopyComplete
 C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\obj\Debug\PersonelApp.DAL.dll
 C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\obj\Debug\PersonelApp.DAL.pdb
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.Helpers.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.Mvc.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.Razor.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.WebPages.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.Helpers.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.Mvc.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.Razor.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.WebPages.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\keski\Desktop\github-sample\GenericRepostry\PersonelApp.DAL\bin\Debug\System.Web.WebPages.Razor.xml

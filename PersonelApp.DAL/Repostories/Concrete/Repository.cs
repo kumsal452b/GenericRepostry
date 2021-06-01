@@ -13,6 +13,7 @@ namespace PersonelApp.DAL.Repostories.Concrete
     {
 
         internal DbContext  dbContext;
+
         private readonly DbSet<TEntity> dbSet;
         public Repository(DbContext dbContext)
         {
