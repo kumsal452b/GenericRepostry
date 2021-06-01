@@ -53,6 +53,19 @@ namespace AspTest.Controllers
             Personel thePersonel = theWork.PersonelRepository.GetById(id);
             ViewBag.Name = thePersonel.Name;
             ViewBag.Lastname = thePersonel.Lastname;
+            ViewBag.id = thePersonel.Id;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Edit(int id,string name,string lastname)
+        {
+            Personel thePersonel=new Personel{
+                Id=id,
+                Lastname=lastname,
+                Name=name,
+                UpdateDate=DateTime.Now
+            };
+            theWork.PersonelRepository.Update(thePersonel, id);
             return View();
         }
     }
