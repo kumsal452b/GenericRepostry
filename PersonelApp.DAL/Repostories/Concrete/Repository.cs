@@ -51,16 +51,6 @@ namespace PersonelApp.DAL.Repostories.Concrete
         {
             dbSet.RemoveRange(entities);
         }
-        [ValidateAntiForgeryToken]
-        public bool Update(TEntity entity,int id)
-        {
-            var theItem = dbSet.Find(id);
-            if (theItem == null)
-            {
-                return false;
-            }
-           
-            return true;
-        }
+        
     }
 }

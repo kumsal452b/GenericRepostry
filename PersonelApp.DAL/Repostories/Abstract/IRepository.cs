@@ -15,7 +15,7 @@ namespace PersonelApp.DAL.Repostories.Abstract
         void AddRange(IEnumerable<TEntity> entities);
         void Remove(int id);
         void RemoveRange(IEnumerable<TEntity> entities);
-        bool Update(TEntity entity,int id);
+        
 
     }
 }

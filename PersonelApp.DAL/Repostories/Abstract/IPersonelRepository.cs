@@ -11,6 +11,7 @@ namespace PersonelApp.DAL.Repostories.Abstract
     {
         IEnumerable<Personel> GetPersonelWithDepartment();
         IEnumerable<Personel> GetAllForPersonel(string key);
+        Personel Update(Personel personel);
 
     }
 }

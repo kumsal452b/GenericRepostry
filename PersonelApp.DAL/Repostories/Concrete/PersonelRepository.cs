@@ -26,6 +26,19 @@ namespace PersonelApp.DAL.Repostories.Concrete
            return PersonelContext.Personels.Where<Personel>(e => e.Lastname.Contains(key) || e.Name.Contains(key));
         }
 
+        public Personel Update(Personel personel)
+        {
+
+           Personel thePersonel=PersonelContext.Personels.FirstOrDefault(e => e.Id == personel.Id);
+            if (thePersonel != null && personel!=null)
+            {
+                thePersonel.Lastname = personel.Lastname;
+                thePersonel.Name = personel.Name;
+                return thePersonel;
+            }
+            return thePersonel;
+        }
+
         public PersonelContext PersonelContext { get { return dbContext as PersonelContext; }}
     }
 }
