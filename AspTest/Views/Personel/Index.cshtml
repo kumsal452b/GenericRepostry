@@ -30,7 +30,7 @@
                         <tr>
 
                             <td>@Html.Label("Personel:")</td>
-                            <td>@Html.DropDownList("emp",null,"dropDown")</td>
+                            <td><asp:DropDownList ID="dropDown" runat="emp" /></td>
                         
                         </tr>
 
@@ -103,7 +103,7 @@
                 alert("Please fill in blank");
                 return;
             }
-            var deneme = $('#dropDown option:selected').val();
+            var deneme = $("#dropDown option:selected").text();
 
             //$.ajax(
             //    {
