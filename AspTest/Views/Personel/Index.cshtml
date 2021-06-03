@@ -33,18 +33,15 @@
                             <td>@Html.DropDownList("emp")</td>
                         
                         </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <button class="btn btn-block btn-danger">Save</button>
-                            </td>
+
+                        <tr>>
                         </tr>
                     </table>
                 </form>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</butto>
+                <button id="save" type="button" class="btn btn-sm btn-success">Save</button>
             </div>
         </div>
     </div>
@@ -83,6 +80,8 @@
 <script src="~/Scripts/jquery-3.3.1.js"></script>
 <script type=text/javascript>
     $(document).ready(function () {
+        var name = $('#name');
+        var lastname = $('#lastname');
         $('#myText').keyup(function () {
             console.log($('#myText').val());
 
@@ -99,6 +98,12 @@
         $('#btnCreate').click(function(){
             $('#myModal').modal('show');
         });
-       
+        $('#save').click(function () {
+            if (name.val() == "" || lastname.val() == "") {
+                alert("Please fill in blank");
+                return;
+            }
+
+        });
     });
 </script>

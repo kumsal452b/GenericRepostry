@@ -88,5 +88,18 @@ namespace AspTest.Controllers
             }
             ViewBag.emp = Items;
         }
+
+        public ActionResult Add(int eid,string name,string lastname)
+        {
+            Personel personel = new Personel
+            {
+                Name = name,
+                Lastname = lastname,
+                DepartmentId = eid
+            };
+            theWork.PersonelRepository.Add(personel);
+            theWork.Complete();
+            return RedirectToAction("Index");
+        }
     }
 }
