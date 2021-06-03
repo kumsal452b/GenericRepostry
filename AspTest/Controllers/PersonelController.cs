@@ -16,10 +16,11 @@ namespace AspTest.Controllers
         public PersonelController()
         {
             theWork = new UnitOfWork(theContext);
+            getEmployeElement();
         }
         public ActionResult Index()
         {
-            getEmployeElement();
+            //getEmployeElement();
             return View(theWork.PersonelRepository.GetAll());
         }
 
@@ -31,7 +32,7 @@ namespace AspTest.Controllers
                 return View(theWork.PersonelRepository.GetAll());
             }
             var list = theWork.PersonelRepository.GetAllForPersonel(searchString);
-            getEmployeElement();
+            //getEmployeElement();
             return View(list);
         }
 

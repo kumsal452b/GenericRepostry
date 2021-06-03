@@ -30,7 +30,7 @@
                         <tr>
 
                             <td>@Html.Label("Personel:")</td>
-                            <td>@Html.DropDownList("emp")</td>
+                            <td>@Html.DropDownList("emp",null,"dropDown")</td>
                         
                         </tr>
 
@@ -103,7 +103,18 @@
                 alert("Please fill in blank");
                 return;
             }
+            var deneme = $('#dropDown option:selected').val();
 
+            //$.ajax(
+            //    {
+            //        url: '/Personel/Add',
+            //        type: 'POST',
+            //        dataType: 'JSON',
+            //        data: {
+            //            eid: 
+            //        }
+            //    }
+            //)
 
         });
     });
