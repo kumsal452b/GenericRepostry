@@ -8,6 +8,7 @@ namespace PersonelApp.Domain
 {
     public class Personel:BaseEntity
     {
+
         public int Id { get; set; }
         public string Name { get; set; }
         public string Lastname { get; set; }

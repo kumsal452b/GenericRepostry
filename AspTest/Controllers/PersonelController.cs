@@ -19,16 +19,7 @@ namespace AspTest.Controllers
         }
         public ActionResult Index()
         {
-            var employeList = theWork.DepartmentRepository.GetAll().Select(e => e.Name);
-            IEnumerable<SelectListItem> selectE;
-            SelectListItem selectList = new SelectListItem();
-            List<SelectListItem> Items = new List<SelectListItem>();
-            foreach (var item in employeList)
-            {
-                selectList.Value = item;
-            }
-            Items.Add(selectList);
-            ViewBag.emp = Items;
+            getEmployeElement();
             return View(theWork.PersonelRepository.GetAll());
         }
 
@@ -40,6 +31,7 @@ namespace AspTest.Controllers
                 return View(theWork.PersonelRepository.GetAll());
             }
             var list = theWork.PersonelRepository.GetAllForPersonel(searchString);
+            getEmployeElement();
             return View(list);
         }
 
@@ -79,6 +71,22 @@ namespace AspTest.Controllers
             theWork.PersonelRepository.Update(thePersonel);
             theWork.Complete();
             return View();
+        }
+        public void getEmployeElement()
+        {
+            var employeList = theWork.DepartmentRepository.GetAll().Select(e => (e.Id, e.Name));
+            IEnumerable<SelectListItem> selectE;
+
+            List<SelectListItem> Items = new List<SelectListItem>();
+            foreach (var item in employeList)
+            {
+                SelectListItem selectList = new SelectListItem();
+                selectList.Value = item.Id.ToString();
+                selectList.Text = item.Name;
+                Items.Add(selectList);
+
+            }
+            ViewBag.emp = Items;
         }
     }
 }

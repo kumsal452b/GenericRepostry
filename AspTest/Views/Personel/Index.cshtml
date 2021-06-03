@@ -2,6 +2,7 @@
 @model IEnumerable<Personel>
 @{
     ViewBag.Title = "Index";
+    List<SelectListItem> listItems = new List<SelectListItem>();
 }
 <div>
     <button class="btn btn-info" id="btnCreate">Create New</button>
@@ -16,7 +17,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/" method="post" class="form-control-static">
+                <form action="/Index" asp-  method="post" class="form-control-static">
                     <table class="table">
                         <tr>
                             <td> @Html.Label("Name:")</td>
@@ -27,16 +28,23 @@
                             <td>@Html.TextBox("lastname")</td>
                         </tr>
                         <tr>
-                            <td>@Html.Label("Empoyee")</td>
-                            <td> @Html.DropDownList("emp")</td>
+
+                            <td>@Html.Label("Personel:")</td>
+                            <td>@Html.DropDownList("emp")</td>
+                        
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-block btn-danger">Save</button>
+                            </td>
                         </tr>
                     </table>
                 </form>
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" id="myButton">Create</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</butto>
             </div>
         </div>
     </div>
