@@ -46,10 +46,10 @@ namespace AspTest.Controllers
         [HttpPost]
         public ActionResult Delete(int id)
         {
-            //theWork.PersonelRepository.Remove(id);
-            //theWork.Complete();
+            theWork.PersonelRepository.Remove(id);
+            theWork.Complete();
             ViewBag.isExit = true;
-            return RedirectToRoute("/Index");
+            return RedirectToAction("Index","Personel");
         }
         public ActionResult Edit(int id)
         {
@@ -100,7 +100,7 @@ namespace AspTest.Controllers
             };
             theWork.PersonelRepository.Add(personel);
             theWork.Complete();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index","Personel");
         }
     }
 }

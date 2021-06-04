@@ -17,7 +17,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/Index" asp-  method="post" class="form-control-static">
+                <form action="/Index" asp- method="post" class="form-control-static">
                     <table class="table">
                         <tr>
                             <td> @Html.Label("Name:")</td>
@@ -30,11 +30,13 @@
                         <tr>
 
                             <td>@Html.Label("Personel:")</td>
-                            <td><asp:DropDownList ID="dropDown" runat="emp" /></td>
-                        
+                            <td>
+                                @Html.DropDownList("dropDown", (IEnumerable<SelectListItem>)ViewBag.emp)
+                            </td>
                         </tr>
 
-                        <tr>>
+                        <tr>
+                            >
                         </tr>
                     </table>
                 </form>
@@ -95,7 +97,7 @@
             )
             console.log("deneme");
         });
-        $('#btnCreate').click(function(){
+        $('#btnCreate').click(function () {
             $('#myModal').modal('show');
         });
         $('#save').click(function () {
@@ -103,18 +105,23 @@
                 alert("Please fill in blank");
                 return;
             }
-            var deneme = $("#dropDown option:selected").text();
+            var id = $("#dropDown option:selected").val();
 
-            //$.ajax(
-            //    {
-            //        url: '/Personel/Add',
-            //        type: 'POST',
-            //        dataType: 'JSON',
-            //        data: {
-            //            eid: 
-            //        }
-            //    }
-            //)
+            $.ajax(
+                {
+                    url: '/Personel/Add',
+                    type: 'POST',
+                    dataType: 'JSON',
+                    data: {
+                        eid: id,
+                        name: name.val(),
+                        lastname: lastname.val(),
+                        success: function () {
+                            alert("Success");
+                        }
+                    }
+                }
+            )
 
         });
     });

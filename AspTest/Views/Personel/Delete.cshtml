@@ -40,7 +40,7 @@
                     $.ajax({
                         url: '/Personel/Delete',
                         type: 'POST',
-                        dataType:'@serializer.Serialize(Model)',
+                        dataType:'JSON',
                         data: {
                             id: '@Model.Id'
                         }
